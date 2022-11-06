@@ -1,0 +1,104 @@
+{
+	"info": {
+		"_postman_id": "367a4f94-662c-4bc5-9f84-6222eaac3fd8",
+		"name": "goldady",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "18198443"
+	},
+	"item": [
+		{
+			"name": "store availability zone",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{url}}/api/status/store_availability_zone",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"status",
+						"store_availability_zone"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "view zone history",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{url}}/api/status/view_zone_history",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"status",
+						"view_zone_history"
+					],
+					"query": [
+						{
+							"key": "",
+							"value": "",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "url",
+			"value": "http://127.0.0.1:8080/",
+			"type": "string"
+		}
+	]
+}
