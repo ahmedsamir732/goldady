@@ -2,7 +2,8 @@
 
 #Install
 
-clone the repo, then `cd goldady`, if you want to change docker environment including `mysql` user, you check `.env` file in the main dir.
+clone the repo, then `cd goldady`, if you want to change docker environment including `mysql` user, check `.env` file in the main dir, then run
+`cd code && cp .env.example .env`
 
 then run:
 `docker-compose up --build`
