@@ -1,12 +1,12 @@
-FROM php:8.0-fpm
+FROM php:8.1.0-fpm
 ENV DEBIAN_FRONTEND noninteractive
 RUN apt-get update && apt-get install -y \
         libfreetype6-dev \
         libjpeg62-turbo-dev \
-        libmcrypt-dev \
+        # libmcrypt-dev \
         libpng-dev \
-    && pecl install mcrypt-1.0.4 \
-    && docker-php-ext-enable mcrypt \
+    # && pecl install mcrypt-1.0.4 \
+    # && docker-php-ext-enable mcrypt \
     && docker-php-ext-configure gd --with-freetype --with-jpeg \
     && docker-php-ext-install -j$(nproc) gd
 	
